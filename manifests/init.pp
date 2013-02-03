@@ -1,7 +1,8 @@
 class imagemagick {
   require xquartz
 
-  package { 'imagemagick':
-    ensure => latest
+  package {
+    'lcms': before => Package['imagemagick'] ;
+    'imagemagick': ;
   }
 }
