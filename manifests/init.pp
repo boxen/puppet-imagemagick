@@ -13,7 +13,7 @@ class imagemagick {
   package {
     'little-cms':
       ensure  => '1.19-boxen1',
-      before  => Package['imagemagick']
+      before  => Package['imagemagick'],
       require => Class['xquartz'] ;
     'imagemagick':
       ensure  => '6.8.0-10-boxen1',
