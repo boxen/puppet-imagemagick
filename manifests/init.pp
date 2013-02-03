@@ -5,17 +5,17 @@ class imagemagick {
   homebrew::formula {
     'little-cms':
       source => 'puppet:///modules/imagemagick/brews/little-cms.rb',
-      before => Package['little-cms'] ;
+      before => Package['boxen/brews/little-cms'] ;
     'imagemagick':
-      before => Package['imagemagick'] ;
+      before => Package['boxen/brews/imagemagick'] ;
   }
 
   package {
-    'little-cms':
+    'boxen/brews/little-cms':
       ensure  => '1.19-boxen1',
-      before  => Package['imagemagick'],
+      before  => Package['boxen/brews/imagemagick'],
       require => Class['xquartz'] ;
-    'imagemagick':
+    'boxen/brews/imagemagick':
       ensure  => '6.8.0-10-boxen1',
       require => Class['xquartz'] ;
   }
