@@ -1,11 +1,11 @@
 require 'formula'
 
-class LittleCms < Formula
+class LittleCms2 < Formula
   homepage 'http://www.littlecms.com/'
-  url 'http://sourceforge.net/projects/lcms/files/lcms/1.19/lcms-1.19.tar.gz'
-  sha1 'd5b075ccffc0068015f74f78e4bc39138bcfe2d4'
+  url 'http://sourceforge.net/projects/lcms/files/lcms/2.4/lcms2-2.4.tar.gz'
+  sha1 '9944902864283af49e4e21a1ca456db4e04ea7c2'
 
-  version '1.19-boxen1'
+  version '2.4-boxen1'
 
   option 'with-python', "Build Python bindings"
 

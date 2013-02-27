@@ -3,16 +3,16 @@ class imagemagick {
   include xquartz
 
   homebrew::formula {
-    'little-cms':
-      source => 'puppet:///modules/imagemagick/brews/little-cms.rb',
-      before => Package['boxen/brews/little-cms'] ;
+    'little-cms2':
+      source => 'puppet:///modules/imagemagick/brews/little-cms2.rb',
+      before => Package['boxen/brews/little-cms2'] ;
     'imagemagick':
       before => Package['boxen/brews/imagemagick'] ;
   }
 
   package {
-    'boxen/brews/little-cms':
-      ensure  => '1.19-boxen1',
+    'boxen/brews/little-cms2':
+      ensure  => '2.4-boxen1',
       before  => Package['boxen/brews/imagemagick'],
       require => Class['xquartz'] ;
     'boxen/brews/imagemagick':
