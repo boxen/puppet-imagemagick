@@ -1,6 +1,7 @@
 class imagemagick {
   include homebrew
   include xquartz
+  include imagemagick::config
 
   homebrew::formula {
     'little-cms2':
