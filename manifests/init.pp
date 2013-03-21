@@ -1,6 +1,7 @@
 class imagemagick {
   include homebrew
   include xquartz
+  include imagemagick::config
 
   homebrew::formula {
     'little-cms2':
@@ -16,7 +17,7 @@ class imagemagick {
       before  => Package['boxen/brews/imagemagick'],
       require => Class['xquartz'] ;
     'boxen/brews/imagemagick':
-      ensure  => '6.8.0-10-boxen1',
+      ensure  => $imagemagick::config::version,
       require => Class['xquartz'] ;
   }
 }
