@@ -13,7 +13,7 @@ class Imagemagick < Formula
   option 'with-quantum-depth-16', 'Compile with a quantum depth of 16 bit'
   option 'with-quantum-depth-32', 'Compile with a quantum depth of 32 bit'
 
-  version '6.8.0-10-boxen1'
+  version '6.8.0-10-boxen2'
 
   depends_on :libltdl
 
