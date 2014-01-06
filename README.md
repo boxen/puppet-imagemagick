@@ -14,3 +14,4 @@ include imagemagick
 * homebrew
 * stdlib
 * xquartz
+ 
