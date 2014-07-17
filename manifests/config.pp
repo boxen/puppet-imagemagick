@@ -1,5 +1,5 @@
 class imagemagick::config {
   require boxen::config
 
-  $version    = '6.8.0-10-boxen2'
+  $version    = '6.8.9-1-boxen2'
 }
