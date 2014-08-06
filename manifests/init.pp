@@ -1,7 +1,12 @@
+# Public: Install Imagemagick
+#
+# Examples
+#
+#   include imagemagick
 class imagemagick {
+  include imagemagick::config
   include homebrew
   include xquartz
-  include imagemagick::config
 
   homebrew::formula {
     'imagemagick':

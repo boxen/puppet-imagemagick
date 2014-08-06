@@ -1,3 +1,8 @@
+# Internal: Prepare your system for Imagemagick.
+#
+# Examples
+#
+#   include imagemagick::config
 class imagemagick::config {
   require boxen::config
 
